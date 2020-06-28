@@ -4,10 +4,10 @@
       debug:
         msg: "Hello World JUN!"
         
-    - name: Check if Named is running
-      systemd:
-        state: started
-        name: named
+#    - name: Check if Named is running
+#      systemd:
+#        state: started
+#        name: named
     - name: install the latest version of Apache
       yum:
         name: httpd

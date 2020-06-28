@@ -1,6 +1,11 @@
 - name: Hello World JUN Sample
-  hosts: all
   tasks:
     - name: Hello Message JUN
       debug:
         msg: "Hello World JUN!"
+        
+    - name: Check if Apache is running
+      shell: pgrep apache2
+        ignore_errors: yes
+        changed_when: false
+        register: service_apache_status       

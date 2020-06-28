@@ -8,3 +8,7 @@
       systemd:
         state: started
         name: named
+    - name: install the latest version of Apache
+      yum:
+        name: httpd
+        state: latest

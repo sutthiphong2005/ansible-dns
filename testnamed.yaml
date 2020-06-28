@@ -4,7 +4,7 @@
       debug:
         msg: "Hello World JUN!"
         
-    - name: Check if Apache is running
+    - name: Check if Named is running
       systemd:
         state: started
         name: named
